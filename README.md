@@ -51,8 +51,8 @@ The folder must look like this:
 hello-fabric/
 ├── README.md
 ├── ai_mcp_fabric_recovery_agent_final.ipynb
-├── ai_mcp_tradeoff_results.csv
-├── improved_fabric_tradeoff_ai_agent.joblib
+├── ai_mcp_tradeoff_results.csv <--- This one will be created during the .ipynb file running
+├── improved_fabric_tradeoff_ai_agent.joblib <--- This one will be created during the .ipynb file running
 └── src/
     └── ai_agent.py
 ```
@@ -69,132 +69,7 @@ If the notebook is moved outside the `hello-fabric/` folder, or if the `src/` fo
 
 ---
 
-## 3. How to Download the Project
-
-### Option A: Clone directly as `hello-fabric`
-
-Open a terminal in the FABRIC Jupyter environment:
-
-```text
-File -> New -> Terminal
-```
-
-Then run:
-
-```bash
-cd /home/fabric/work
-git clone https://github.com/TruongSon30/ECE_671_final_project.git hello-fabric
-cd hello-fabric
-```
-
-Check the folder:
-
-```bash
-ls
-```
-
-Expected files:
-
-```text
-README.md
-ai_mcp_fabric_recovery_agent_final.ipynb
-ai_mcp_tradeoff_results.csv
-improved_fabric_tradeoff_ai_agent.joblib
-src
-```
-
-Then open:
-
-```text
-ai_mcp_fabric_recovery_agent_final.ipynb
-```
-
----
-
-### Option B: Copy into an existing `hello-fabric/` folder
-
-If the Hello FABRIC tutorial already created or uses a `hello-fabric/` folder, go into that folder first:
-
-```bash
-cd /home/fabric/work/hello-fabric
-```
-
-Clone this repository into a temporary folder:
-
-```bash
-git clone https://github.com/TruongSon30/ECE_671_final_project.git temp_project
-```
-
-Copy the required files into the current `hello-fabric/` folder:
-
-```bash
-cp temp_project/README.md .
-cp temp_project/ai_mcp_fabric_recovery_agent_final.ipynb .
-cp temp_project/ai_mcp_tradeoff_results.csv .
-cp temp_project/improved_fabric_tradeoff_ai_agent.joblib .
-cp -r temp_project/src .
-```
-
-Remove the temporary folder:
-
-```bash
-rm -rf temp_project
-```
-
-Check the folder:
-
-```bash
-ls
-```
-
-Expected files:
-
-```text
-README.md
-ai_mcp_fabric_recovery_agent_final.ipynb
-ai_mcp_tradeoff_results.csv
-improved_fabric_tradeoff_ai_agent.joblib
-src
-```
-
----
-
-### Option C: Download ZIP from GitHub
-
-1. Open the GitHub repository page.
-2. Click the green `Code` button.
-3. Select `Download ZIP`.
-4. Upload the ZIP file into the FABRIC Jupyter environment.
-5. Open a terminal and unzip it.
-
-Example:
-
-```bash
-cd /home/fabric/work
-unzip ECE_671_final_project-main.zip
-mv ECE_671_final_project-main hello-fabric
-cd hello-fabric
-```
-
-Check the folder:
-
-```bash
-ls
-```
-
-Expected files:
-
-```text
-README.md
-ai_mcp_fabric_recovery_agent_final.ipynb
-ai_mcp_tradeoff_results.csv
-improved_fabric_tradeoff_ai_agent.joblib
-src
-```
-
----
-
-## 4. Repository Files
+## 3. Repository Files
 
 | File                                       | Purpose                                                                                                                                                                  |
 | ------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
