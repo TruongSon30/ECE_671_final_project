@@ -81,7 +81,7 @@ If the notebook is moved outside the `hello-fabric/` folder, or if the `src/` fo
 
 ---
 
-## 5. Project Topology
+## 4. Project Topology
 
 The notebook creates a five-node FABRIC topology:
 
